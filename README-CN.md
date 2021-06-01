@@ -21,7 +21,38 @@
 $ composer require coolephp/pipeline --prefer-dist -vvv
 ```
 
+## 注册服务
+
+`config\app.php` 中添加
+
+``` php
+<?php
+
+return [
+    /*
+     * 第三方服务
+     */
+    'providers' => [
+        ...
+        \Coole\Pipeline\PipelineServiceProvider::class,
+        ...
+    ],
+];
+```
+
 ## 使用
+
+``` php
+app('pipeline')
+	->send($object)
+    ->through($middleware)
+    // ->with('bar')
+    // ->via('differentMethod')
+    // ->thenReturn()
+    ->then(function(){
+    	// middleware is finished
+    });
+```
 
 ## 测试
 

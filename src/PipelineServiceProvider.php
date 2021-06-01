@@ -16,6 +16,9 @@ use Guanguans\Pipeline\Pipeline;
 
 class PipelineServiceProvider implements ServiceProviderInterface
 {
+    /**
+     * {@inheritdoc}
+     */
     public function register(Container $app)
     {
         $app->bind(Pipeline::class, function ($app) {

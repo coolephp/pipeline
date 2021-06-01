@@ -1,11 +1,9 @@
 {
     "name": "coolephp/pipeline",
-    "description": "A PHP package template repository. - 一个PHP软件包模板存储库。",
+    "description": "A simple PHP middleware pipeline. - 一个简单的 PHP 中间件管道。",
     "keywords": [
-        "package",
-        "template",
-        "PHP",
-        "skeleton"
+        "middleware",
+        "pipeline"
     ],
     "homepage": "https://github.com/coolephp/pipeline",
     "support": {
@@ -25,14 +23,15 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.2"
+        "php": ">=7.2",
+        "guanguans/coole": "^1.0",
+        "guanguans/pipeline": "^1.0"
     },
     "require-dev": {
         "brainmaestro/composer-git-hooks": "^2.7",
         "friendsofphp/php-cs-fixer": "^2.16",
         "mockery/mockery": "^1.2",
         "overtrue/phplint": "^2.3",
-        "phpbench/phpbench": "^1.0",
         "phpunit/phpunit": "^7 || ^8",
         "vimeo/psalm": "^3.11"
     },
